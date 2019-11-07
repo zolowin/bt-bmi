@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="weight" id="weight"> enter the weight :
+    <br><br>
+    <input type="number" name="height" id="height"> enter the height :
+    <br><br>
+    <button type="button" onclick="Result()">result</button>
+    <script>
+        function Result() {
+            let a = parseFloat(document.getElementById('weight').value);
+            let b = parseFloat(document.getElementById('height').value);
+            let c = a / (b * b);
+
+            if (c < 18.5) {
+                alert('underweight');
+
+            } else if (c < 25) {
+                alert('normal');
+
+            } else if (c < 30) {
+                alert('overweight');
+            } else {
+                alert('obese');
+            }
+        }
+    </script>
+</body>
+
+</html>
